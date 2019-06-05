@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+}
+
+
+.container-grid{
+    display:grid;
+    width:100%;
+    height:100%;
+    grid-template-columns:1fr 4fr;
+    grid-template-rows:minmax(5vh,auto) minmax(5vh,auto) minmax(5vh,auto) minmax(5vh,auto) minmax(5vh,auto) minmax(5vh,auto) minmax(5vh,auto) minmax(5vh,auto) minmax(5vh,auto) minmax(5vh,auto) minmax(5vh,auto) minmax(5vh,auto) minmax(5vh,auto) minmax(5vh,auto)  minmax(5vh,auto) ;
+    background-color: rgba(238, 238, 238, 0.56);
+}
+
+.top-bar{
+    padding:10px;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background-color: rgba(40, 44, 52, 0.8);
+}
+
+.main-content{
+    grid-column: 2/3;
+    grid-row: 2/16;
+    background-color: rgba(40, 44, 52, 0.27);
+    min-height: 100vh;
+}
+
+.menu-item{
+    background-color: rgba(40, 44, 52, 0.49);
+    text-align:center;
+    padding-top:1vh;
+    border-bottom:1px solid rgba(84, 86, 77, 0.48);
+}
+.menu-item:hover{
+    background-color: rgba(40, 44, 52, 0.31);
+    cursor:pointer;
+}
+
+.menu-item:hover a{
+    text-decoration: none;
+    color: rgba(238, 233, 227, 0.73);
+}
+.menu-item a{
+    text-decoration: none;
+    color: rgba(238, 233, 227, 0.73);
+}
+.info-content p{
+    font-size:1vw;
+}
