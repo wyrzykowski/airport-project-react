@@ -2,21 +2,26 @@
     box-sizing: border-box;
 }
 
-
 .container-grid{
     display:grid;
     width:100%;
     height:100%;
     grid-template-columns:1fr 4fr;
     grid-template-rows:minmax(5vh,auto) minmax(5vh,auto) minmax(5vh,auto) minmax(5vh,auto) minmax(5vh,auto) minmax(5vh,auto) minmax(5vh,auto) minmax(5vh,auto) minmax(5vh,auto) minmax(5vh,auto) minmax(5vh,auto) minmax(5vh,auto) minmax(5vh,auto) minmax(5vh,auto)  minmax(5vh,auto) ;
-    background-color: rgba(238, 238, 238, 0.56);
+    /*background-color: rgba(238, 238, 238, 0.56);*/
+    background-color: rgba(40, 44, 52, 0.8);
+
 }
 
 .top-bar{
     padding:10px;
     grid-column: 1/3;
     grid-row: 1/2;
-    background-color: rgba(40, 44, 52, 0.8);
+    /*background-color: rgba(40, 44, 52, 0.8);*/
+    text-align: center;
+    font-weight: bold;
+    color: #17a2b8;
+    text-shadow: 0px 7px 5px rgba(40, 44, 52, 1);
 }
 
 .main-content{
@@ -24,6 +29,11 @@
     grid-row: 2/16;
     background-color: rgba(40, 44, 52, 0.27);
     min-height: 100vh;
+    padding: 30px;
+    border-radius: 20px;
+    margin: 10px;
+    margin-top: 0px;
+    color: rgba(238, 233, 227, 0.73);
 }
 
 .menu-item{
@@ -31,15 +41,21 @@
     text-align:center;
     padding-top:1vh;
     border-bottom:1px solid rgba(84, 86, 77, 0.48);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 .menu-item:hover{
-    background-color: rgba(40, 44, 52, 0.31);
-    cursor:pointer;
+    /*background-color: rgba(40, 44, 52, 0.31);*/
+    background-color: #17a2b8;
+    /*cursor:pointer;*/
+    box-shadow: 0px 3px 7px rgba(40, 44, 52, 1);
 }
 
 .menu-item:hover a{
     text-decoration: none;
-    color: rgba(238, 233, 227, 0.73);
+    color: #fff;
 }
 .menu-item a{
     text-decoration: none;
@@ -47,4 +63,8 @@
 }
 .info-content p{
     font-size:1vw;
+
+}
+.btn{
+    margin: 5px;
 }

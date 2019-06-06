@@ -21,7 +21,7 @@ function App() {
       <div className="container-grid">
 
         <div className="top-bar">
-          <h1>Airport App 1.0.0</h1>
+          <h1>Airport Management App</h1>
         </div>
           {/*here menu*/}
 
